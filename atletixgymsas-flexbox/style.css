@@ -1,0 +1,121 @@
+:root {
+  --borgona: #800020;
+  --champagne: #F7E7CE;
+  --gris-claro: #D5D5D5;
+  --texto: #1a1a1a;
+  --fondo: #ffffff;
+}
+
+/* Reset universal */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: var(--champagne);
+  color: var(--texto);
+  line-height: 1.6;
+}
+
+
+nav {
+  background-color: var(--borgona);
+  padding: 10px;
+  text-align: center;
+  display: flex; 
+  justify-content: center;
+  gap: 20px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+h1, h2 {
+  color: var(--borgona);
+  text-align: center;
+  margin: 20px 0;
+}
+
+table {
+  width: 90%;
+  margin: 20px auto;
+  border-collapse: collapse;
+  background-color: var(--gris-claro);
+}
+
+th, td {
+  border: 1px solid var(--borgona);
+  padding: 10px;
+  text-align: center;
+}
+
+/* CONTENEDOR DE IMAGEN Y TABLA EN INDEX - distribución horizontal */
+.contenedor-flex {
+  display: flex;
+  flex-direction: row; /* Distribución horizontal */
+  justify-content: space-around; /* Espaciado equitativo */
+  align-items: center;
+  flex-wrap: wrap; /* Adaptación */
+  margin: 20px;
+}
+
+form {
+  width: 80%;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: var(--gris-claro);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column; /* Vertical */
+  align-items: center; /* Centrado */
+  gap: 10px; /* Espacio entre campos */
+}
+
+form input, form textarea {
+  width: 80%;
+  padding: 10px;
+  border: 1px solid var(--borgona); /* Bordes visibles */
+}
+
+/* Efecto hover para el boton */
+form input[type="submit"]:hover {
+  background-color: var(--borgona);
+  color: white;
+  cursor: pointer;
+}
+
+.contenedor-servicios {
+  display: flex; 
+  justify-content: space-between; /* Separación entre cajas */
+  flex-wrap: wrap; /* Para adaptar */
+  margin: 20px;
+}
+
+.contenedor-servicios div {
+  width: 45%; /* Mitad del ancho con margen */
+  margin-bottom: 10px;
+}
+
+footer {
+  text-align: center;
+  padding: 15px;
+  background-color: var(--borgona);
+  color: white;
+  margin-top: 30px;
+}
+
+ul {
+  margin-left: 40px;
+  margin-top: 10px;
+}
+
+.img-centro {
+  display: block;
+  margin: 20px auto;
+}
